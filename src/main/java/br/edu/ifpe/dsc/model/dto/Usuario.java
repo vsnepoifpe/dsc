@@ -1,7 +1,15 @@
 package br.edu.ifpe.dsc.model.dto;
 
+import java.util.UUID;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Usuario {
 
+    @Id
+    private UUID id;  
 
     private String nome;
     private String sobrenome;   
